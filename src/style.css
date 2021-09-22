@@ -1,10 +1,37 @@
+body {
+  font-family: "Google Sans", Roboto, arial, sans-serif;
+}
+
 .weather-app {
-  border: 1px solid black;
+  border: 1px solid #dadde1;
   border-radius: 10px;
-  margin-top: 10px;
-  padding: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 .codeFooter {
   text-align: center;
+}
+
+h1 {
+  color: rgb(32, 33, 36);
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  padding: 0;
 }
