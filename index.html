@@ -17,42 +17,54 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
             <h1>Ormond Beach, FL</h1>
-            <br />
             <ul>
               <li>Tuesday 9:00 AM</li>
               <li>Partly Cloudy</li>
             </ul>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="partially cloudy"
-            />
-            78° F | C
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Precipitation: 16%</li>
-              <br />
-              <li>Humidity: 91%</li>
-              <br />
-              <li>Wind: 2 mph</li>
-            </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="partyly cloudy"
+                  class="float-left"
+                  id="main-icon"
+                />
+
+                <div class="float-left">
+                  <strong>78</strong>
+                  <span class="units">°F | <a href="#">°C</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="float-right">
+                <ul>
+                  <li>Precipitation: 16%</li>
+                  <li>Humidity: 91%</li>
+                  <li>Wind: 2 mph</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="codeFooter">
-      <small>
-        <a
-          href="https://github.com/jordanroberson-codes/Vanilla-Weather-App/blob/main/index.html"
-        >
-          Code</a
-        >
-        by Jordan Roberson
-      </small>
+
+      <div class="codeFooter">
+        <small>
+          <a
+            href="https://github.com/jordanroberson-codes/Vanilla-Weather-App/blob/main/index.html"
+          >
+            Code</a
+          >
+          by Jordan Roberson
+        </small>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
