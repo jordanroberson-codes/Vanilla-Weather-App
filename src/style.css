@@ -14,8 +14,10 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-li {
+.overview {
+  margin-bottom: 20px;
+}
+.dateDescription li {
   list-style: none;
   color: rgb(135, 135, 135);
   font-size: 16px;
@@ -38,14 +40,10 @@ li {
   text-align: center;
 }
 
-.overview {
-  margin-bottom: 20px;
-}
-
 .weather-temperature img {
   margin-right: 6px;
-  height: 64px;
-  width: 64px;
+  height: 100px;
+  width: 100px;
 }
 
 .weather-temperature strong {
@@ -70,4 +68,13 @@ li {
   color: rgb(33, 33, 33);
   cursor: default;
   text-decoration: none;
+}
+
+.humidityWind {
+  list-style: none;
+  color: rgb(135, 135, 135);
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 0;
 }
