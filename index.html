@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONT AWESOME LINK-->
+    <script
+      src="https://kit.fontawesome.com/0d8577ba8e.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Bootstrap Link-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -35,11 +40,7 @@
                 />
               </div>
               <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
+                <input type="submit" value="&#xf002" class="fas fa-search" id = "search-button"/>
               </div>
             </div>
           </form>
@@ -47,32 +48,34 @@
             <h1 id="city"></h1>
             <ul class="dateDescription">
               <li>Last Updated: <span id="date"></span></li>
-              <li id="description">Partly Cloudy</li>
+              <li id="description"></li>
             </ul>
           </div>
-          <div class="row">
-            <div class="col-6">
+          <!-- <div class="col-6"> -->
+            <div id="humidityWind">
+              <ul class="humidityWind">
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> mph</li>
+              </ul>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="row">
+            <div class="col-4"> -->
               <div class="clearfix weather-temperature">
-                <img src="" alt="partyly cloudy" class="float-left" id="icon" />
+                <img src="" alt="icon of weather" class="float-left" id="icon" />
 
-                <div class="float-left">
+                <div>
                   <strong id="temperature"></strong>
                   <span class="units"
                     ><a href="#" id="fahrenheit-link" class="active">°F</a> |
                     <a href="#" id="celcius-link">°C</a></span
                   >
                 </div>
+                
               </div>
-            </div>
-            <div class="col-6">
-              <div id="humidityWind">
-                <ul class="humidityWind">
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind: <span id="wind"></span> mph</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            <!-- </div> -->
+          
+          <!-- </div> -->
           <div class="weather-forecast" id="forecast"></div>
         </div>
       </div>
